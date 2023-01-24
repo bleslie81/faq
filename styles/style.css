@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 12px;
+  background: linear-gradient(hsl(273deg, 75%, 66%), hsl(240deg, 73%, 65%));
+  height: 100vh;
+}
+
+.cardrow {
+  margin: 0 auto;
+  text-align: -webkit-center;
+}
+
+.faqcard {
+  width: 70%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  height: 60%;
+  border-radius: 20px;
+  display: flex;
+  overflow: hidden;
+}
+
+.img {
+  position: relative;
+}
+.img img {
+  position: absolute;
+}
+
+.col1, .col2 {
+  width: 50%;
+}
+
+.col2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.pattern {
+  width: 600px;
+  left: -200px;
+  top: 40px;
+}
+
+.woman {
+  width: 500px;
+  left: -100px;
+  top: 100px;
+}
+
+.box {
+  position: relative;
+  left: -36vw;
+  top: 430px;
+  z-index: 120;
+}
+
+.howmanydisplay {
+  display: flex !important;
+  flex-direction: column;
+  width: 100%;
+}
+
+.selector {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+  border-bottom: 1px solid hsl(240deg, 5%, 91%);
+}
+
+.option {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.option span {
+  cursor: pointer;
+}
+.option span:hover {
+  color: hsl(14deg, 88%, 65%);
+}
+
+.faq {
+  font-size: x-large;
+  font-weight: 700;
+  text-align: left;
+  padding: 0 0 3rem 3.5vw;
+}
+
+@media only screen and (max-width: 900px) {
+  .col1 {
+    width: 100%;
+    height: 10%;
+  }
+  .col2 {
+    width: 100%;
+    height: 90%;
+  }
+  .faqcard {
+    flex-direction: column;
+    height: 70%;
+    overflow: initial;
+  }
+  .box,
+.woman,
+.pattern {
+    display: none;
+  }
+  .mobile {
+    position: relative !important;
+    width: 40vw;
+    max-width: 300px;
+    min-width: 180px;
+    top: -18vw;
+    display: block;
+    z-index: 20;
+  }
+  .patternmobile {
+    position: relative !important;
+    width: 40vw;
+    max-width: 300px;
+    min-width: 180px;
+    top: -55vw;
+    display: inline;
+    z-index: 10;
+  }
+}
+@media only screen and (min-width: 890px) {
+  .mobile {
+    display: none;
+  }
+  .patternmobile {
+    display: none;
+  }
+}
+.attribution {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  color: white;
+}/*# sourceMappingURL=style.css.map */
